@@ -18,8 +18,8 @@ export function HeroSection({ className }: HeroSectionProps) {
 
   useEffect(() => {
     // Set image paths on client side to ensure proper GitHub Pages compatibility
-    const profilePath = getRuntimeAssetPath('/assets/images/Finding joy in the simplicity of the sea ............beach bridge ocean smile sunny monument collage sunset sunrise travelphotography travel.jpg');
-    const profileHoverPath = getRuntimeAssetPath('/assets/images/Finding paradise wherever the waves take me. . . . . . . . . . . . . . . .beachbound beachlife beach beachdreaming ocean paradise wavesfordays explore rainyday shorelineadventures seasideescape beach.jpg');
+    const profilePath = getRuntimeAssetPath('/assets/images/Screenshot 2025-01-30 175314.png');
+    const profileHoverPath = getRuntimeAssetPath('/assets/images/Screenshot 2025-01-30 175314.png');
 
     setProfileImagePath(profilePath);
     setProfileHoverImagePath(profileHoverPath);
@@ -144,7 +144,7 @@ export function HeroSection({ className }: HeroSectionProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Hi, I'm Narendra{' '}
+              Hi, I'm Bollineni Kaveri{' '}
               <motion.span
                 className="inline-block"
                 animate={{
@@ -169,12 +169,10 @@ export function HeroSection({ className }: HeroSectionProps) {
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
-                No-Code Developer | AI Prompt Engineer | Mobile App Creator
+                Data Analyst
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Recent Computer Science and Engineering graduate specializing in AI-assisted development and no-code solutions.
-                I leverage modern AI tools to build efficient SaaS applications, mobile apps, and automation workflows.
-                With expertise in cloud backends and API integration, I create cost-effective digital solutions with minimal traditional coding.
+                Hello! I am an Artificial Intelligence and Data Science graduate with a strong foundation in Python, SQL,Power BI, and tools like VSCode and GitHub. My passion for technology drives me to participate in hackathons and workshops, where I continuously sharpen my problem-solving skills. I'm excited to apply my knowledge and experience to tackle real-world challenges and contribute to innovative projects.
               </p>
             </motion.div>
 

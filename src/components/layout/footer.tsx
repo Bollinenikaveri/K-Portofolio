@@ -30,7 +30,7 @@ export function Footer({ className }: FooterProps) {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
-            © {currentYear} Narendra Chowdary. Made with
+            © {currentYear} Bollineni Kaveri. Made with
             <motion.span
               animate={{ 
                 scale: [1, 1.2, 1],

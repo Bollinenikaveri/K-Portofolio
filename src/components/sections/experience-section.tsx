@@ -12,21 +12,15 @@ interface ExperienceSectionProps {
 export function ExperienceSection({ className }: ExperienceSectionProps) {
   const certifications = [
     {
-      title: 'Critical Thinking & Problem Solving',
-      provider: 'LinkedIn Learning',
-      year: '2023',
+      title: 'Web Development',
+      provider: 'Academor',
+      year: '2024',
       icon: Award,
     },
     {
       title: 'Python Programming',
-      provider: 'Coursera',
-      year: '2022',
-      icon: Code,
-    },
-    {
-      title: 'Web Development Fundamentals',
-      provider: 'Udemy',
-      year: '2023',
+      provider: 'YBI Foundation',
+      year: '2024',
       icon: Code,
     },
   ];
@@ -37,7 +31,7 @@ export function ExperienceSection({ className }: ExperienceSectionProps) {
       icon: Laptop,
     },
     {
-      title: 'Member of the Computer Science Club at NBKRIST College',
+      title: 'Member of the Computer Science Club at Prathyusha Engineering College',
       icon: Users,
     },
     {

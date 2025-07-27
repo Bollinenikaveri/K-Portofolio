@@ -44,19 +44,19 @@ export function ContactSection({ className }: ContactSectionProps) {
     {
       icon: Mail,
       label: 'Email',
-      value: 'narendrabollineni2002@gmail.com',
-      href: 'mailto:narendrabollineni2002@gmail.com',
+      value: 'kaveribollineni@gmail.com',
+      href: 'mailto:kaveribollineni@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 798 997 6214',
-      href: 'tel:+917989976214',
+      value: '+91 9182272887',
+      href: 'tel:+919182272887',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Edulapalli(Vi), Gudur(M), Tirupathi(D), Andhra Pradesh, 524409',
+      value: 'Nellore, Andhra Pradesh, India - 524101',
       href: null,
     },
   ];
@@ -65,17 +65,17 @@ export function ContactSection({ className }: ContactSectionProps) {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/nrenx',
+      href: 'https://github.com/Bollinenikaveri',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/bollineninarendrachowdary',
+      href: 'https://www.linkedin.com/in/kaveri-bollineni-502640294/',
     },
     {
       icon: Twitter,
       label: 'Twitter',
-      href: 'https://x.com/___CHOWDARY___',
+      href: 'https://x.com/kaveribollineni',
     },
   ];
 

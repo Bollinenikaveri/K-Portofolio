@@ -49,21 +49,21 @@ export function MacOSDock({ openWindows, onWindowRestore, onWallpaperClick, clas
       name: 'GitHub',
       icon: Github,
       color: 'text-gray-900',
-      action: () => window.open('https://github.com/nrenx', '_blank'),
+      action: () => window.open('https://github.com/Bollinenikaveri', '_blank'),
     },
     {
       id: 'linkedin',
       name: 'LinkedIn',
       icon: Linkedin,
       color: 'text-blue-600',
-      action: () => window.open('https://linkedin.com/in/bollineninarendrachowdary', '_blank'),
+      action: () => window.open('https://www.linkedin.com/in/kaveri-bollineni-502640294/', '_blank'),
     },
     {
       id: 'mail',
       name: 'Mail',
       icon: Mail,
       color: 'text-blue-500',
-      action: () => window.open('mailto:narendrabollineni2002@gmail.com', '_blank'),
+      action: () => window.open('mailto:kaveribollineni@gmail.com', '_blank'),
     },
   ];
 

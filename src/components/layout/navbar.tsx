@@ -89,7 +89,7 @@ export function Navbar({ className }: NavbarProps) {
           >
             <AnimatedLogo className="w-8 h-8 lg:w-10 lg:h-10" />
             <span className="text-lg lg:text-xl font-semibold text-foreground">
-              Narendra Chowdary
+              Bollineni Kaveri
             </span>
           </motion.div>
 

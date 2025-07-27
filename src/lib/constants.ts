@@ -143,46 +143,51 @@ export const FORM_CONFIG = {
 
 // SEO Configuration
 export const SEO_CONFIG: SEOConfig = {
-  title: 'Portfolio - Full Stack Developer',
-  description: 'Professional portfolio showcasing full-stack development projects, skills, and experience.',
+  title: 'Portfolio - Bollineni Kaveri',
+  description: 'Professional portfolio showcasing data analyst projects, skills, and experience.',
   keywords: [
-    'full-stack developer',
-    'web development',
-    'react',
-    'next.js',
-    'typescript',
+    'data analyst',
+    'python',
+    'sql',
+    'power bi',
     'portfolio',
     'software engineer',
   ],
-  author: 'Your Name',
+  author: 'Bollineni Kaveri',
   siteUrl: APP_CONFIG.baseUrl,
   image: '/assets/images/og-image.jpg',
-  twitterHandle: '@___CHOWDARY___',
+  twitterHandle: '@kaveribollineni',
 };
 
 // Social Media Links
 export const SOCIAL_LINKS = [
   {
     platform: 'GitHub',
-    url: 'https://github.com/nrenx',
+    url: 'https://github.com/Bollinenikaveri',
     icon: 'Github',
     label: 'GitHub Profile',
   },
   {
     platform: 'LinkedIn',
-    url: 'https://linkedin.com/in/bollineninarendrachowdary',
+    url: 'https://www.linkedin.com/in/kaveri-bollineni-502640294/',
     icon: 'Linkedin',
     label: 'LinkedIn Profile',
   },
   {
-    platform: 'Twitter',
-    url: 'https://x.com/___CHOWDARY___',
-    icon: 'Twitter',
-    label: 'Twitter Profile',
+    platform: 'Facebook',
+    url: 'https://www.facebook.com/profile.php?id=100083297882383&mibextid=ZbWKwL',
+    icon: 'Facebook',
+    label: 'Facebook Profile',
+  },
+  {
+    platform: 'Instagram',
+    url: 'https://www.instagram.com/kaveribollineni/?hl=en',
+    icon: 'Instagram',
+    label: 'Instagram Profile',
   },
   {
     platform: 'Email',
-    url: 'mailto:narendrabollineni2002@gmail.com',
+    url: 'mailto:kaveribollineni@gmail.com',
     icon: 'Mail',
     label: 'Send Email',
   },

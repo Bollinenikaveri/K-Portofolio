@@ -56,130 +56,37 @@ export function MacOSDesktop({ className }: MacOSDesktopProps) {
     const spacing = isMobile ? 120 : 130; // Optimized horizontal spacing for better visual density
     const startX = isMobile ? 50 : 100; // Responsive left margin
 
-    // Find specific projects for individual folders
-    const tradeBookLedge = projects.find(p => p.id === 'saas-dashboard');
-    const nbkristPortal = projects.find(p => p.id === 'mobile-fitness-app');
-    const portfolioWebsite = projects.find(p => p.id === 'portfolio-website');
-    const aiAutomationInternship = projects.find(p => p.id === 'ai-automation-internship');
-
-    // Get remaining projects for "More Projects" folder
-    const featuredProjectIds = ['saas-dashboard', 'mobile-fitness-app', 'portfolio-website', 'ai-automation-internship'];
-    const remainingProjects = projects.filter(p => !featuredProjectIds.includes(p.id));
+    const projectFolders = projects.map((project, index) => {
+      const row = Math.floor(index / 2);
+      const col = index % 2;
+      return {
+        id: project.id,
+        name: project.title,
+        project: project,
+        position: { x: startX + col * spacing, y: baseY + row * 140 },
+        type: 'project' as const,
+      };
+    });
 
     if (isMobile) {
       // Stack vertically on mobile for better usability
-      return [
-        {
-          id: 'trade-book-ledge',
-          name: 'Trade Book Ledge',
-          project: tradeBookLedge,
-          position: { x: startX, y: baseY },
-          type: 'project' as const,
-        },
-        {
-          id: 'nbkrist-portal',
-          name: 'NBKRIST Student Portal',
-          project: nbkristPortal,
-          position: { x: startX, y: baseY + 120 },
-          type: 'project' as const,
-        },
-        {
-          id: 'ai-automation-internship',
-          name: 'AI Automation Internship',
-          project: aiAutomationInternship,
-          position: { x: startX, y: baseY + 240 },
-          type: 'project' as const,
-        },
-        {
-          id: 'portfolio-website',
-          name: 'Interactive Portfolio Website',
-          project: portfolioWebsite,
-          position: { x: startX, y: baseY + 360 },
-          type: 'project' as const,
-        },
-        {
-          id: 'more-projects',
-          name: 'More Projects',
-          projects: remainingProjects,
-          position: { x: startX, y: baseY + 480 },
-          type: 'special' as const,
-        },
-      ];
+      return projects.map((project, index) => ({
+        id: project.id,
+        name: project.title,
+        project: project,
+        position: { x: startX, y: baseY + index * 120 },
+        type: 'project' as const,
+      }));
     }
 
-    // Desktop 2x2+1 grid layout
-    const rowSpacing = 140; // Vertical spacing between rows
-    const row1Y = baseY; // First row Y position
-    const row2Y = baseY + rowSpacing; // Second row Y position
-    const row3Y = baseY + rowSpacing * 2; // Third row Y position
-
-    // Calculate center position for "More Projects" in bottom row
-    const centerX = startX + (spacing / 2); // Center between two columns
-
-    return [
-      // Row 1: Trade Book Ledge, NBKRIST Portal
-      {
-        id: 'trade-book-ledge',
-        name: 'Trade Book Ledge',
-        project: tradeBookLedge,
-        position: { x: startX, y: row1Y },
-        type: 'project' as const,
-      },
-      {
-        id: 'nbkrist-portal',
-        name: 'NBKRIST Student Portal',
-        project: nbkristPortal,
-        position: { x: startX + spacing, y: row1Y },
-        type: 'project' as const,
-      },
-      // Row 2: AI Weather Reporter, Portfolio Website
-      {
-        id: 'ai-automation-internship',
-        name: 'AI Weather Reporter',
-        project: aiAutomationInternship,
-        position: { x: startX, y: row2Y },
-        type: 'project' as const,
-      },
-      {
-        id: 'portfolio-website',
-        name: 'Interactive Portfolio Website',
-        project: portfolioWebsite,
-        position: { x: startX + spacing, y: row2Y },
-        type: 'project' as const,
-      },
-      // Row 3: More Projects (centered)
-      {
-        id: 'more-projects',
-        name: 'More Projects',
-        projects: remainingProjects,
-        position: { x: centerX, y: row3Y },
-        type: 'special' as const,
-      },
-    ];
+    return projectFolders;
   };
 
-  const [folders, setFolders] = useState<DesktopFolder[]>(() => {
-    // Check for layout version to reset positions when layout changes
-    const LAYOUT_VERSION = '2x2+1-grid'; // Update this when layout changes
+  const [folders, setFolders] = useState<DesktopFolder[]>([]);
 
-    if (typeof window !== 'undefined') {
-      const savedVersion = sessionStorage.getItem('macos-layout-version');
-      const saved = sessionStorage.getItem('macos-folder-positions');
-
-      // If layout version matches and we have saved positions, use them
-      if (savedVersion === LAYOUT_VERSION && saved) {
-        try {
-          return JSON.parse(saved);
-        } catch {
-          console.warn('Failed to parse saved folder positions');
-        }
-      } else {
-        // Layout changed or no saved version, reset to new layout
-        sessionStorage.setItem('macos-layout-version', LAYOUT_VERSION);
-      }
-    }
-    return getInitialFolderPositions();
-  });
+  useEffect(() => {
+    setFolders(getInitialFolderPositions());
+  }, []);
 
   // Load available wallpapers on mount
   useEffect(() => {

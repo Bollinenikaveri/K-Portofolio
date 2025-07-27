@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Facebook, Instagram } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { SOCIAL_LINKS } from '@/lib/constants';
 
@@ -16,6 +16,8 @@ export function SocialIcons({ className }: SocialIconsProps) {
     Linkedin,
     Twitter,
     Mail,
+    Facebook,
+    Instagram,
   };
 
   const containerVariants = {

@@ -12,62 +12,41 @@ interface AboutSectionProps {
 export function AboutSection({ className }: AboutSectionProps) {
   const educationData = [
     {
-      year: 'Expected 2026',
-      degree: 'Bachelor of Engineering in Computer Science and Engineering',
-      institution: 'NBKRIST College Autonomous',
-      grade: 'CGPA: 8.2 (Current)',
+      year: '2022-2026',
+      degree: 'B.Tech in Artificial Intelligence and Data Science',
+      institution: 'Prathyusha Engineering College, Chennai',
+      grade: 'CGPA: 9.00',
     },
     {
-      year: 'Graduated 2022',
+      year: '2020-2022',
       degree: 'Intermediate',
-      institution: 'Narayana Junior College, State Board',
-      grade: 'CGPA: 5.55',
+      institution: 'Narayana Junior College, Nellore',
+      grade: 'Grade: 9.54%',
     },
     {
-      year: 'Graduated 2020',
-      degree: 'SSC',
-      institution: 'Narayana EM High School, State Board',
-      grade: 'CGPA: 9.88',
+      year: '2019-2020',
+      degree: 'High School',
+      institution: 'Audisankara E.M High School, Gudur',
+      grade: 'GPA: 9.9',
     },
   ];
 
   const skillCategories = [
     {
-      title: 'No-Code/Low-Code',
-      skills: ['SaaS development using AI-assisted tools & platforms'],
+      title: 'Programming Languages',
+      skills: ['Python', 'SQL'],
     },
     {
-      title: 'Cloud & Backend',
-      skills: [
-        'Supabase & Firebase – auth, DB, storage',
-        'API Integration & key management',
-        'Cost-optimized usage of 3rd-party services',
-      ],
-    },
-    {
-      title: 'Mobile Development',
-      skills: [
-        'Android & iOS dev via AI tools',
-        'Android Studio',
-        'Xcode',
-      ],
-    },
-    {
-      title: 'AI & Automation',
-      skills: [
-        'AI Prompt Engineering with low-iteration design',
-        'Workflow automation using n8n',
-        'Telegram bots for info delivery & engagement',
-      ],
+      title: 'Data Analysis & Visualization',
+      skills: ['Power BI', 'Microsoft Excel'],
     },
     {
       title: 'Web Development',
-      skills: [
-        'HTML',
-        'CSS',
-        'JavaScript',
-        'Basic front-end tasks',
-      ],
+      skills: ['HTML', 'CSS', 'JavaScript'],
+    },
+    {
+      title: 'Soft Skills',
+      skills: ['Problem Solving', 'Effective Communication'],
     },
   ];
 
@@ -123,10 +102,7 @@ export function AboutSection({ className }: AboutSectionProps) {
             <motion.div variants={itemVariants} className="space-y-8">
               <div className="prose prose-lg dark:prose-invert max-w-none">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Recent Computer Science and Engineering graduate specializing in no-code/low-code development and AI-assisted tools. 
-                  I focus on creating efficient digital solutions with minimal traditional coding, leveraging AI tools, cloud backends, 
-                  and automation workflows. I'm seeking opportunities where I can apply my skills in AI prompt engineering, SaaS development, 
-                  and mobile app creation to deliver cost-effective and innovative solutions.
+                  Hello! I am an Artificial Intelligence and Data Science graduate with a strong foundation in Python, SQL,Power BI, and tools like VSCode and GitHub. My passion for technology drives me to participate in hackathons and workshops, where I continuously sharpen my problem-solving skills. I'm excited to apply my knowledge and experience to tackle real-world challenges and contribute to innovative projects.
                 </p>
               </div>
 
