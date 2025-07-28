@@ -4,7 +4,6 @@ A modern, interactive portfolio website built with Next.js 15, TypeScript, Tailw
 
 ## 🚀 Live Demo
 
-Visit the live website: [https://nrenx.github.io/portfilio/](https://nrenx.github.io/portfilio/)
 
 ## ✨ Features
 
