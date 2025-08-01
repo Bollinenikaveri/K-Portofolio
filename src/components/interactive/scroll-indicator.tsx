@@ -51,7 +51,7 @@ export function ScrollIndicator({ className }: ScrollIndicatorProps) {
       y: 0,
       transition: {
         duration: 0.5,
-        ease: 'easeOut',
+        ease: "easeInOut" as const,
       },
     },
     hidden: {
@@ -59,7 +59,7 @@ export function ScrollIndicator({ className }: ScrollIndicatorProps) {
       y: 20,
       transition: {
         duration: 0.3,
-        ease: 'easeIn',
+        ease: "easeIn" as const,
       },
     },
   };
@@ -70,7 +70,7 @@ export function ScrollIndicator({ className }: ScrollIndicatorProps) {
       transition: {
         duration: 1.5,
         repeat: Infinity,
-        ease: 'easeInOut',
+        ease: "easeInOut" as const,
       },
     },
   };
@@ -81,7 +81,7 @@ export function ScrollIndicator({ className }: ScrollIndicatorProps) {
       transition: {
         duration: 2,
         repeat: Infinity,
-        ease: 'easeInOut',
+        ease: "easeInOut" as const,
       },
     },
   };

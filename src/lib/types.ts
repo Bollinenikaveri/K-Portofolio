@@ -1,5 +1,4 @@
 // Core Types for Portfolio Migration
-
 export interface PersonalInfo {
   name: string;
   title: string;

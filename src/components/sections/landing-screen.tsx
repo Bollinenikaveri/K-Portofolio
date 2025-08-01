@@ -48,7 +48,7 @@ export function LandingScreen({ onComplete }: LandingScreenProps) {
       transition: {
         duration: 5,
         repeat: Infinity,
-        ease: 'linear',
+        ease: 'linear' as const,
       },
     },
   };
@@ -61,7 +61,7 @@ export function LandingScreen({ onComplete }: LandingScreenProps) {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: 'easeOut',
+        ease: 'easeOut' as const,
       },
     },
     hidden: {
@@ -70,7 +70,7 @@ export function LandingScreen({ onComplete }: LandingScreenProps) {
       opacity: 0,
       transition: {
         duration: 1.2,
-        ease: [0.6, 0.1, 0.3, 1],
+        ease: [0.6, 0.1, 0.3, 1] as const,
       },
     },
   };
@@ -82,7 +82,7 @@ export function LandingScreen({ onComplete }: LandingScreenProps) {
       scale: 1,
       transition: {
         duration: 0.3,
-        ease: 'easeInOut',
+        ease: 'easeInOut' as const,
       },
     },
     visible: {
@@ -90,7 +90,7 @@ export function LandingScreen({ onComplete }: LandingScreenProps) {
       scale: 1.1,
       transition: {
         duration: 0.3,
-        ease: 'easeInOut',
+        ease: 'easeInOut' as const,
       },
     },
   };
@@ -108,7 +108,7 @@ export function LandingScreen({ onComplete }: LandingScreenProps) {
       y: Math.random() * 200 - 100,
       transition: {
         duration: 1.5,
-        ease: 'easeOut',
+        ease: 'easeOut' as const,
       },
     },
     exit: {

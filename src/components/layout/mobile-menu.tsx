@@ -79,7 +79,7 @@ export function MobileMenu({ className }: MobileMenuProps) {
     closed: {
       x: '100%',
       transition: {
-        type: 'spring',
+        type: "spring" as const,
         stiffness: 400,
         damping: 40,
       }
@@ -87,7 +87,7 @@ export function MobileMenu({ className }: MobileMenuProps) {
     open: {
       x: 0,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 400,
         damping: 40,
       }
